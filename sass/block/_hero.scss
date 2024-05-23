@@ -1,0 +1,86 @@
+.hero__warp {
+  width: 100%;
+  background: url(../../assets/img/Bitmap.png) no-repeat right;
+  padding: 117px 85px;
+  margin-bottom: 136px;
+  .hero__text {
+    max-width: 493px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    b {
+      font-size: 72px;
+      color: white;
+    }
+    p {
+      font-size: 16px;
+      color: aliceblue;
+    }
+    button {
+      width: 217px;
+      font-size: 18px;
+      height: 50px;
+      background: #66d2cf;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+      &:hover {
+        cursor: pointer;
+      }
+      &:active {
+        transform: scale(0.9);
+        opacity: 0.8;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .hero__warp {
+    width: 100%;
+    background: url(../../assets/img/Bitmap.png) no-repeat right;
+    padding: 117px 10px;
+    .hero__text {
+      max-width: 493px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 32px;
+      b {
+        font-size: 40px;
+        color: white;
+      }
+      p {
+        font-size: 16px;
+        color: aliceblue;
+      }
+      button {
+        button {
+          font-size: 18px;
+          display: inline-block;
+          outline: 0;
+          border: 0;
+          cursor: pointer;
+          will-change: box-shadow,transform;
+          background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+          box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+          padding: 0 2em;
+          border-radius: 0.3em;
+          color: #fff;
+          height: 2.6em;
+          text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+          transition: box-shadow 0.15s ease, transform 0.15s ease;
+        }
+        
+        button:hover {
+          box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+          transform: translateY(-0.1em);
+        }
+        
+        button:active {
+          box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+          transform: translateY(0em);
+        }
+      }
+    }
+  }
+}

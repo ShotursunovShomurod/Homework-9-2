@@ -1,0 +1,197 @@
+.infarmation__wrapper {
+  margin-top: 223px;
+  max-width: 1045;
+  display: flex;
+  flex-direction: column;
+  gap: 300px;
+  padding: 0 50px;
+  .infarmation__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+    .infarmation__card {
+      display: flex;
+      flex-direction: column;
+      // padding: 10px;
+      gap: 40px;
+      b {
+        font-size: 60px;
+        color: #fdd6ba;
+      }
+      strong {
+        font-size: 42px;
+        max-width: 200px;
+      }
+      p {
+        max-width: 300px;
+      }
+    }
+  }
+}
+button {
+  margin-top: 20px;
+  font-size: 18px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow, transform;
+  background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%);
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%),
+    0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%),
+    inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 0 2em;
+  border-radius: 0.3em;
+  color: #fff;
+  height: 2.6em;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+button:hover {
+  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%),
+    0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+  transform: translateY(-0.1em);
+}
+
+button:active {
+  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+  transform: translateY(0em);
+}
+
+@media (max-width: 950px) {
+  .infarmation__wrapper {
+    margin-top: 50px;
+    max-width: 1045;
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+    // padding: 0 100px;
+    .infarmation__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      .infarmation__card {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 40px;
+        b {
+          font-size: 60px;
+          color: #fdd6ba;
+        }
+        strong {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 755px) {
+  .infarmation__wrapper {
+    margin-top: 50px;
+    max-width: 1045;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 50px;
+    .infarmation__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      flex-direction: column;
+
+      .infarmation__card {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        b {
+          font-size: 60px;
+          color: #fdd6ba;
+        }
+        strong {
+          font-size: 28px;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+  button {
+    width: 217px;
+    height: 50px;
+    background: #66d2cf;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-top: 25px;
+    margin: auto;
+    &:hover {
+      cursor: pointer;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+@media (max-width: 455px) {
+  .infarmation__wrapper {
+    margin-top: 50px;
+    max-width: 1045;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    .infarmation__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      flex-direction: column;
+      justify-content: center;
+      .infarmation__card {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        b {
+          font-size: 60px;
+          color: #fdd6ba;
+        }
+        strong {
+          font-size: 14px;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+  button {
+    width: 107px;
+    height: 20px;
+    background: #66d2cf;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-top: 25px;
+    margin: auto;
+    &:hover {
+      cursor: pointer;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
